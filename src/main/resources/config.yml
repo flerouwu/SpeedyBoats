@@ -1,0 +1,53 @@
+engines:
+  one:
+    # Engine name is in MiniMessage format.
+    # https://docs.advntr.dev/minimessage/format.html
+    name: "<red>Engine Level 1</red>"
+    
+    # Multiplier of the velocity when holding the item.
+    multiplier: 1.0
+    
+    # Material of the resulting item.
+    material: "sugar"
+    
+    ingredients:
+      R: "redstone"
+      I: "iron_ingot"
+      S: "sugar"
+    
+    # Recipe that is registered (requires a restart!)
+    recipe:
+      - " R "
+      - "ISI"
+      - " R "
+
+  two:
+    name: "<red>Engine Level 2</red>"
+    multiplier: 2.0
+    material: "redstone"
+    
+    ingredients:
+      D: "diamond"
+      # You can use speedyboats:key to reference another engine.
+      B: "speedyboats:one"
+      G: "gold_ingot"
+    
+    recipe:
+      - " D "
+      - "GBG"
+      - " D "
+
+  three:
+    name: "<red>Engine Level 3</red>"
+    multiplier: 3.0
+    material: "popped_chorus_fruit"
+    
+    ingredients:
+      N: "netherite_ingot"
+      S: "nautilus_shell"
+      B: "speedyboats:two"
+    
+    recipe:
+      - " N "
+      - "SBS"
+      - " N "
