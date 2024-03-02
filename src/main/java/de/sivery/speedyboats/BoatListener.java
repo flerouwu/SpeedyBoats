@@ -44,6 +44,8 @@ public class BoatListener implements Listener {
                     new NamespacedKey(plugin, "EngineKey"),
                     PersistentDataType.STRING
             );
+            
+            if (key == null) return;
 
             // Find Section
             ConfigurationSection section = plugin.config.getConfigurationSection("engines." + key);
